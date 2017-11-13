@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE LCARS SYSTEM "index.dtd">
+
+<LCARS>
+  <menu>
+    <view id="view_energy">Energy</view>
+    <view id="view_lifesupport">Life Support</view>
+    <view id="view_heating">Heizung</view>
+    <view id="view_switches">Switches</view>
+
+<!--    <view id="view_status">Status</view>	 -->
+<!--    <view id="view_klima">Klima</view>	 
+    <view id="view_phone">Telefon</view>	
+    <view id="view_weather">Wetter</view>	-->
+
+  </menu>   
+
+  <views>
+
+	<view id="view_switches">
+		<group id="grprollaeden.eg" caption="Rolläden (EG)" style="mygroup"> 
+			<device hwid="Heating_Relais" reading="state" updateInterval="1" displayname="Heizung" style="togglebutton" />
+			<device hwid="dummy" reading="dummy" updateInterval="0" displayname="" style="newline"></device>
+<!--			<device hwid="rolladen.gaestewc" reading="state" updateInterval="60" displayname="Gäste WC" style="togglebutton" /> -->
+		</group>
+
+		<group id="grprollaeden.og" caption="Luftbefeuchter" style="mygroup"> 
+			<device hwid="PS_BedRoom" reading="temperature" updateInterval="60" displayname="Schlafzimmer" style="togglebutton" />
+			<device hwid="dummy" reading="dummy" updateInterval="0" displayname="" style="newline"></device>
+		</group>
+
+	</view>
+
+  <view id="view_energy">
+        <group id="energy" caption="Energy" style="mygroup2">
+                <device hwid="Solar_Power" reading="power" unit="W" updateInterval="60" displayname="Solar energy" style="tablerow" />
+                <device hwid="HouseUsage_Power" reading="power" unit="W" updateInterval="60" displayname="House" style="tablerow" />
+                <device hwid="LivingRoom_Power" reading="power" unit="W" updateInterval="60" displayname="Living" style="tablerow" />
+                <device hwid="Computer_Power" reading="power" unit="W" updateInterval="60" displayname="Computer" style="tablerow" />
+                <device hwid="Kitchen_Power" reading="power" unit="W" updateInterval="60" displayname="Kitchen" style="tablerow" />
+                <device hwid="Stove_Power" reading="power" unit="W" updateInterval="60" displayname="Stove" style="tablerow" />
+                <device hwid="Oven_Power" reading="power" unit="W" updateInterval="60" displayname="Oven" style="tablerow" />
+                <device hwid="Washing_Machine_Power" reading="power" unit="W" updateInterval="60" displayname="Washing" style="tablerow" />
+                <device hwid="Dryer_Power" reading="power" unit="W" updateInterval="60" displayname="Dryer" style="tablerow" />
+        </group>
+  </view>
+
+  <view id="view_lifesupport">
+	<group id="grptemp.eg" caption="Temperatur" style="mygroup2"> 
+		<device hwid="LivingRoom_LC" reading="temperature" unit=" °C" updateInterval="60" displayname="Living Room" style="tablerow" />
+		<device hwid="Roof_LC" reading="temperature" unit=" °C" updateInterval="60" displayname="Roof" style="tablerow" />
+                <device hwid="Outside_LC" reading="temperature" unit="   C" updateInterval="60" displayname="Outside" style="tablerow" />
+                <device hwid="HeatingRoom_LC" reading="temperature" unit="   C" updateInterval="60" displayname="Heating Room" style="tablerow" />
+	</group>
+	<group id="grphum.eg" caption="Luftfeuchte" style="mygroup2"> 
+		<device hwid="LivingRoom_LC" reading="humidity" unit=" %" updateInterval="60" displayname="Arbeitszimmer" style="tablerow" />
+		<device hwid="Roof_LC" reading="humidity" unit=" %" updateInterval="60" displayname="HWR" style="tablerow" />
+	</group>
+  </view>
+
+<!--    <view id="view_status">
+
+        <group id="l" caption="Status test" style="mygroup">
+                <device hwid="LivingRoom_LC" reading="temperature" updateInterval="5" displayname="tablerow" style="tablerow"></device>
+                <device hwid="Roof_LC" reading="humidity" updateInterval="5" displayname="togglebutton" style="togglebutton"></device>
+        </group>
+
+   </view> -->
+
+</views>
+
+</LCARS>

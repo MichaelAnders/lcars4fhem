@@ -1,0 +1,166 @@
+.group2 {
+	position: relative;
+	display: inline-block;
+	padding: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	margin-top:10px;
+	margin-left: 15px;
+	border: 0px solid blue;
+	background-color: #000000;
+	text-align: left;
+	text-decoration: none;
+	font-size: 1em;
+
+}
+
+.group2_header {
+	position: relative;
+	display: block;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+	background-color: #000000;
+ 
+}
+.ptopleftdiv {
+	position:relative;
+	float:left;
+	/*top:5px;*/
+	/*left:10px;*/
+	width:60px;
+	height:50px;
+	border: 0px solid red;
+	background-color:#FF9900;
+	border-top-left-radius: 50px;
+	padding:0px;
+}
+
+.ptopleftdiv_inner {
+	position:relative;
+	float:right;
+	top: 18px;
+	width:22px;
+	height:32px;
+	border: 0px solid green;
+	background-color:#000000;
+	border-top-left-radius: 30px;
+}
+.ptopleftdiv_fill {
+	position:relative;
+	float:left;
+	/*top:5px;
+	left:420px;
+	right:55px;*/
+	width:330px;;
+	height:18px;
+	border: 0px solid black;
+	background-color:#FF9900;
+	margin-bottom:32px;
+}
+
+.group2_main {
+	position: relative;
+	/*display:inline-block;*/
+	background-color:#0000FF;
+	border-left:  0px solid #666699;
+	border-right: 0px solid #666699;
+	background-color:transparent;
+	min-width:200px;
+	height:100%
+	padding-left: 15px;
+}
+
+.group2_main_left {
+	/*position:relative;*/
+	/*float:left;*/
+	border-left:38px solid #FF9900;
+	
+	background-color:#000000;
+	height:auto;
+	left:-15px;
+
+
+
+}
+.group2_main_right {
+	
+	background-color:#00FF00;
+	
+	margin-left:15px;
+}
+
+
+.group2_footer {
+	position: relative;
+	display: block;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+	background-color: #000000;
+ 
+}
+
+.pbotleftdiv {
+	position:relative;
+	float:left;
+	/*top:5px;*/
+	/*left:10px;*/
+	width:60px;
+	height:50px;
+	border: 0px solid red;
+	background-color:#FF9900;
+	border-bottom-left-radius: 50px;
+	padding:0px;
+}
+
+.pbotleftdiv_inner {
+	position:relative;
+	float:right;
+	
+	width:22px;
+	height:32px;
+	border: 0px solid green;
+	background-color:#000000;
+	border-bottom-left-radius: 30px;
+}
+.pbotleftdiv_fill {
+	position:relative;
+	float:left;
+	/*top:5px;
+	left:420px;
+	right:55px;*/
+	width:330px;
+	height:18px;
+	border: 0px solid black;
+	background-color:#FF9900;
+	margin-top:32px;
+}
+
+.tablegrp2content {
+	font-family: tngfont;
+	text-align: right;
+	font-size:1.5em;
+	color: #9c9cff;
+	margin-left:15px;
+}
+
+.grp2cpt {
+	font-family: tngfont;
+	float:right;	
+	font-size:2.1em;
+	color: #9c9cff;
+	line-height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+

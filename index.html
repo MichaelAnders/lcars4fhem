@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>LCARS Home</title>
+<link rel="stylesheet" type="text/css" href="style.css" >
+<!--
+<link rel="stylesheet" media="all and (orientation:portrait)" href="style.css">
+<link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+-->
+
+<link rel="stylesheet" type="text/css" href="./modules/label/label.css" >
+<link rel="stylesheet" type="text/css" href="./modules/group/group.css" >
+<link rel="stylesheet" type="text/css" href="./modules/group2/group2.css" >
+<link rel="stylesheet" type="text/css" href="./modules/tablerow/tablerow.css" >
+<link rel="stylesheet" type="text/css" href="./modules/newline/newline.css" >
+<link rel="stylesheet" type="text/css" href="./modules/togglebutton/togglebutton.css" >
+
+<script type="text/javascript" src="./jscript/jquery-2.1.3.js"></script>
+<script type="text/javascript" src="./jscript/jquery-periodicalupdater.js"></script>
+<script type="text/javascript" src="./jscript/jquery-ui-1.11.3/jquery-ui.js"></script>
+<script type="text/javascript" src="./jscript/draggabilly.pkgd.js"></script>
+<script type="text/javascript" src="./jscript/packery.pkgd.min.js"></script>
+
+
+
+<script type="text/javascript" src="./jscript/lcars.js"></script>
+<script type="text/javascript" src="./modules/group/group.js"></script>
+<script type="text/javascript" src="./modules/group2/group2.js"></script>
+<script type="text/javascript" src="./modules/label/label.js"></script>
+<script type="text/javascript" src="./modules/newline/newline.js"></script>
+<script type="text/javascript" src="./modules/tablerow/tablerow.js"></script>
+<script type="text/javascript" src="./modules/togglebutton/togglebutton.js"></script>
+
+
+
+<script>
+
+isTouchSupported = 'ontouchstart' in window;
+
+  var arr_menuitems = new Array();
+  var array_views = new Array();
+  var current_view = null;
+  var old_view = null;
+  
+  // first of all read config
+ 
+$( document ).ready(function() {
+    console.log( "ready!" );
+    parse_config();
+//	load_view("view_status","Status");
+});
+
+
+</script>
+
+</head>
+<body onload="showTime();" id="body">
+<div style="height:15px;width:100%;background:#000000;"></div>
+<header>
+	<div class="topleftdiv"> 
+        	<div class="topleftdiv_inner"></div>
+        </div>
+	<div class="topleft_caption" id="room_view">Status</div>	
+	<div class="topmiddlediv"></div>
+	<div class="toprightdiv"></div>
+</header>
+
+<div id="main">
+  <article id="content">
+    </article>
+  <section id="menu" class="bla"></section>
+</div>
+<footer>	
+	<div class="bottomleftdiv">
+		<div class="bottomleftdiv_inner"></div>
+	</div>
+	<div class="bottommiddlediv"></div>
+	<div class="Uhr" id="Uhr">Date:&nbsp;10.02.2015&nbsp;- Time: 11:50</div>
+	<div class="bottomrightdiv"></div>
+</footer>
+<div style="height:15px;width:100%;background:#000000;"></div>
+</body>
+</html>
+

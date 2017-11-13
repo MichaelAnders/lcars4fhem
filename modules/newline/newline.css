@@ -1,0 +1,16 @@
+.newline {
+	position: relative;
+	display: block;
+	padding: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	margin-top:1px;
+	margin-left: 15px;
+	border: 0px solid blue;
+	background-color: #000000;
+
+	width:100%;
+
+
+}
+
